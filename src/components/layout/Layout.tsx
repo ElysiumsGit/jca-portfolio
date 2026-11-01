@@ -5,7 +5,7 @@ interface LayoutProps {
   number: string;
   label: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   children?: ReactNode;
 }
 
