@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 interface LayoutProps {
   number: string;
   label: string;
-  title: string;
+  title?: string;
   subtitle?: string;
   children?: ReactNode;
 }

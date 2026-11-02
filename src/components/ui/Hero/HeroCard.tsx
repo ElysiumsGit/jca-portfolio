@@ -10,11 +10,11 @@ const HeroCard = () => {
           {"</>"}
         </span>
       }
-      className="h-full min-h-[560px] w-full"
+      className="h-full w-full"
     >
       <div className="flex flex-1 flex-col justify-center">
 
-        <h1 className="text-6xl font-medium leading-[1.05] tracking-[-5px] md:text-8xl">
+        <h1 className="text-4xl font-medium md:text-8xl">
           John Carlo
           <br />
           Abanes

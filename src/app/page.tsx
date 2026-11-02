@@ -1,8 +1,11 @@
 
 import Navbar from "@/components/layout/Navbar";
 import { About } from "@/components/sections/About";
+import { Contact } from "@/components/sections/Contact";
 import Experience from "@/components/sections/Experience";
 import Hero from "@/components/sections/Hero";
+import { Projects } from "@/components/sections/Projects";
+import { Footer } from "@/components/ui/Footer";
 
 export default function Home() {
   return (
@@ -35,15 +38,17 @@ export default function Home() {
           id="projects"
           className="flex min-h-screen items-center justify-center"
         >
-          Projects
+          <Projects/>
         </section>
 
         <section
           id="contact"
           className="flex min-h-screen items-center justify-center"
         >
-          Contact
+          <Contact/>
         </section>
+
+        <Footer/>
       </main>
     </div>
   );
