@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
@@ -11,6 +10,7 @@ interface ProjectCardProps {
   technologies: string[];
   scope?: string;
   href: string;
+  type: "desktop" | "tablet" | "mobile";
 }
 
 export default function ProjectCard({
@@ -21,22 +21,60 @@ export default function ProjectCard({
   technologies,
   scope,
   href,
+  type,
 }: ProjectCardProps) {
   return (
     <article className="group flex h-full w-full flex-col overflow-hidden rounded-[22px] border border-[#292929] bg-[#141414] transition-colors duration-300 hover:border-[#414141]">
 
       {/* Project Screenshot */}
-      <div className="shrink-0 bg-[#1c1c1c] p-4">
-        <div className="relative h-[220px] w-full overflow-hidden rounded-xl border border-[#303030] lg:h-[250px]">
-          <Image
-            src={image}
-            alt={`${title} project preview`}
-            fill
-            priority
-            className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
-            sizes="(max-width: 768px) 100vw, 70vw"
-          />
-        </div>
+      <div className="flex min-h-[280px] shrink-0 items-center justify-center overflow-hidden bg-[#1c1c1c] p-6">
+
+        {/* Mobile */}
+        {type === "mobile" && (
+          <div className="relative h-[340px] w-[170px] overflow-hidden rounded-[28px] border-[5px] border-[#333] bg-black shadow-2xl">
+            <Image
+              src={image}
+              alt={`${title} mobile app preview`}
+              fill
+              priority
+              className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+              sizes="170px"
+            />
+
+            {/* Device Notch */}
+            <div className="absolute left-1/2 top-0 z-10 h-[17px] w-[65px] -translate-x-1/2 rounded-b-xl bg-black" />
+          </div>
+        )}
+
+        {/* Tablet */}
+        {type === "tablet" && (
+          <div className="flex w-full items-center justify-center overflow-hidden bg-[#1c1c1c] p-4">
+            <div className="relative aspect-[16/9] w-full max-w-[420px]">
+              <Image
+                src={image}
+                alt={`${title} tablet app preview`}
+                fill
+                priority
+                className="object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                sizes="(max-width: 768px) 90vw, 420px"
+              />
+            </div>
+          </div>
+        )}
+
+        {/* Desktop */}
+        {type === "desktop" && (
+          <div className="relative h-[220px] w-full overflow-hidden rounded-xl border border-[#303030] lg:h-[250px]">
+            <Image
+              src={image}
+              alt={`${title} desktop project preview`}
+              fill
+              priority
+              className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+              sizes="(max-width: 768px) 100vw, 70vw"
+            />
+          </div>
+        )}
       </div>
 
       {/* Project Information */}

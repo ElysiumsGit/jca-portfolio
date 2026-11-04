@@ -18,37 +18,40 @@ export const Projects = () => {
         <div className="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-12">
             <div className="lg:col-span-4 flex">
                 <ProjectCard
-                title="Orbit — work, in focus."
-                category="CONCEPT / PRODUCTIVITY PLATFORM"
-                description="A team workspace concept connecting projects, tasks, and progress. Designed around clear priorities, shared context, and a calm daily workflow."
-                image="/images/orbit-preview.png"
-                technologies={["Next.js", "TypeScript", "PostgreSQL", "Prisma"]}
-                scope="INTERFACE · AUTH · ROLE-BASED API · DATA MODEL"
-                href="/projects/orbit"
+                    title="DocuManage — document management simplified."
+                    category="CONCEPT / PRODUCTIVITY TOOL"
+                    description="A document management platform designed to streamline notarial workflows. It enables notaries to organize client records and documents, manage notarization requests, track document status, schedule notarization sessions, and monitor the progress of notarial transactions from request to completion."
+                    image="/images/documanage.png"
+                    technologies={["Flutter", "Supabase", "Node.js"]}
+                    scope="WORKSPACE · TASKS · PROGRESS"
+                    href="https://document-management-821fe.web.app/?fbclid=IwY2xjawVWXRFleHRuA2FlbQIxMABwZG9mBWJyaWQRMWkyTDBNMnZWRkpQbjd1cXZzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEff9Y16oUMrIkDI_nfNqtBNeSPysC8fztYtbSDLtLNog-eSZtKgMIeRV-tFyc_aem_z6af-RTYStvisgt0UbiFVQ#/login"
+                    type="desktop"
                 />
             </div>
 
             {/* Secondary Project - Forma */}
             <div className="lg:col-span-4 flex">
                 <ProjectCard
-                title="Forma — less, better."
-                category="CONCEPT / COMMERCE EXPERIENCE"
-                description="A considered storefront for everyday objects. Product discovery, a persistent cart, and a streamlined checkout in one cohesive experience."
-                image="/images/forma-preview.png"
-                technologies={["React", "Node.js", "Stripe"]}
-                scope="STOREFRONT · CART · CHECKOUT"
-                href="/projects/forma"
+                    title="Storewatch — a considered storefront for everyday objects."
+                    category="CONCEPT / COMMERCE EXPERIENCE"
+                    description="StoreWatch gives brands, merchandisers, and field teams real-time visibility into store execution, inventory levels and attendance — all in one mobile-first platform."
+                    image="/images/storewatch.png"
+                    technologies={["Flutter", "Firebase", "Express.js"]}
+                    scope="INVENTORY · ATTENDANCE · REPORTING"
+                    href="https://storewatch.praetorianintel.com/"
+                    type="mobile"
                 />
             </div>
             <div className="lg:col-span-4 flex">
                 <ProjectCard
-                title="Forma — less, better."
-                category="CONCEPT / COMMERCE EXPERIENCE"
-                description="A considered storefront for everyday objects. Product discovery, a persistent cart, and a streamlined checkout in one cohesive experience."
-                image="/images/forma-preview.png"
-                technologies={["React", "Node.js", "Stripe"]}
-                scope="STOREFRONT · CART · CHECKOUT"
-                href="/projects/forma"
+                    title="Popina"
+                    category="RESTAURANT MANAGEMENT PLATFORM"
+                    description="An all-in-one restaurant management platform designed to streamline daily operations. Features include queue management, food inventory tracking, table management, reservations, and dynamic marketing tools to improve customer engagement and restaurant efficiency."
+                    image="/images/popina.png"
+                    technologies={["Flutter", "MySQL", "Node.js"]}
+                    scope="QUEUEING · INVENTORY · RESERVATIONS · TABLE MANAGEMENT · MARKETING"
+                    href="/projects/popina"
+                    type="tablet"
                 />
             </div>
         </div>

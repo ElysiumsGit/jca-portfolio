@@ -7,30 +7,30 @@ export const ExperienceCard = () => {
     id: "1",    
       label: 'Most recent role',
       active: true,
-      title: '[Role title]',
-      date: '[Start date – End date]',
-      company: '[Company or organization] · [Work arrangement]',
+      title: 'Full-Stack Developer',
+      date: 'November 2025 - May 2026',
+      company: 'Techero Solution BHD SDN · Remote',
       description:
-        '[Describe the product or team, the systems you owned, and the technologies you used. Add a verified contribution or outcome.]',
+        'As a Full-Stack Developer at Techero Solution BHD SDN, I was responsible for designing and implementing web applications using modern technologies. I collaborated with cross-functional teams to deliver high-quality software solutions, focusing on both front-end and back-end development. My work involved optimizing application performance, ensuring scalability, and maintaining code quality through best practices and code reviews.',
     },
     {
     id: "2",    
       label: 'Previous role / engagement',
       active: false,
-      title: '[Role title]',
-      date: '[Start date – End date]',
-      company: '[Company or organization] · [Work arrangement]',
+      title: 'Software Engineer',
+      date: 'January 2024 - October 2025',
+      company: 'Praetorian Intelligence Incorporation · On-site',
       description:
-        '[Describe your responsibilities, the problems you helped solve, and how you collaborated. Include only confirmed achievements.]',
+        'As a Software Engineer at Praetorian Intelligence Incorporation, I was responsible for developing and maintaining software applications. I worked closely with the development team to identify and resolve issues, ensuring the delivery of high-quality solutions. My responsibilities included writing clean, maintainable code, participating in code reviews, and contributing to the overall improvement of our development processes.',
     },
     {
       label: 'Previous role / engagement',
       active: false,
-      title: '[Role title]',
-      date: '[Start date – End date]',
-      company: '[Company or organization] · [Work arrangement]',
+      title: 'Freelance Developer',
+      date: 'June 2022 - Present',
+      company: 'Freelance · Remote',
       description:
-        '[Describe your responsibilities, the problems you helped solve, and how you collaborated. Include only confirmed achievements.]',
+        'As a Freelance Developer, I have worked on various projects for different clients, delivering custom software solutions. I have collaborated with clients to understand their requirements and translate them into functional applications. My work has involved both front-end and back-end development, ensuring the delivery of high-quality, maintainable code.',
     },
   ]
 

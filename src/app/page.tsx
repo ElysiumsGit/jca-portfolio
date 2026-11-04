@@ -5,6 +5,7 @@ import { Contact } from "@/components/sections/Contact";
 import Experience from "@/components/sections/Experience";
 import Hero from "@/components/sections/Hero";
 import { Projects } from "@/components/sections/Projects";
+import ChatWidget from "@/components/ui/ChatWidget";
 import { Footer } from "@/components/ui/Footer";
 
 export default function Home() {
@@ -47,8 +48,8 @@ export default function Home() {
         >
           <Contact/>
         </section>
-
-        <Footer/>
+        <ChatWidget/>
+        <Footer/> 
       </main>
     </div>
   );

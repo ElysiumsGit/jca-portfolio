@@ -21,7 +21,7 @@ export const BuildCard = () => {
         </div>
 
         <a
-          href="mailto:hello@example.com"
+          href="mailto:abierajc0707@gmail.com"
           className="group flex items-center justify-between border-t border-white/10 pt-5"
         >
           <div>
@@ -29,7 +29,7 @@ export const BuildCard = () => {
               Prefer email?
             </span>
             <span className="text-2xl tracking-tight">
-              hello@example.com
+              abierajc0707@gmail.com
             </span>
           </div>
 
